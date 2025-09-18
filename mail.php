@@ -24,7 +24,7 @@ try {
 
     //Recipients
     $mail->setFrom('kevin.kamunya@strathmore.edu', 'Kevin');
-    $mail->addAddress('kevinnyamu11154@gmail.com', 'Nyamu');     //Add a recipient
+    $mail->addAddress('Natasha.alexia@strathmore.edu', 'Nyamu');     //Add a recipient
    
     //Attachments
     //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -32,12 +32,13 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Welcome to our BBIT Service ';
-    $mail->Body    = 'This is the new semester <b>Let us enjoy coding!</b>';
+    $mail->Subject = 'Welcome to Kranos';
+    $mail->Body    = 'Welcome to Kranos <b>Joins us and revolutionize businesses!</b>';
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+
 }
